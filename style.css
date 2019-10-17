@@ -1,0 +1,600 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+}
+
+.section, .cta, footer {
+  width: 100%;
+}
+
+.my-padding {
+  padding: 80px 0;
+}
+
+@media (max-width: 992px) {
+  .my-padding {
+    padding: 35px 0;
+  }
+}
+
+.my-bm {
+  margin-bottom: 65px;
+}
+
+@media (max-width: 992px) {
+  .my-bm {
+    margin-bottom: 25px;
+  }
+}
+
+.title {
+  text-transform: capitalize;
+  font-size: 30px;
+  color: #212529;
+}
+
+@media (max-width: 992px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+}
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/bg-image.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+header .text-area {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  z-index: 1000;
+}
+
+header .text-area img {
+  height: 50px;
+  margin-bottom: 75px;
+}
+
+header .text-area h1 {
+  font-size: 62px;
+  font-weight: 500;
+}
+
+header .text-area h1::first-letter {
+  text-transform: capitalize;
+}
+
+header .text-area p {
+  font-size: 26px;
+  margin: 45px 0 75px;
+}
+
+header .text-area p::first-letter {
+  text-transform: capitalize;
+}
+
+header .text-area .my-btn {
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #00ad85;
+  padding: 15px 45px;
+  font-weight: 800;
+  border-radius: 50px;
+  -webkit-transition: background-color ease-in-out .15s;
+  transition: background-color ease-in-out .15s;
+}
+
+header .text-area .my-btn:hover {
+  text-decoration: none;
+  background-color: #E04F00;
+}
+
+.navbar-section {
+  width: 100%;
+  background-color: #00ad85;
+}
+
+.navbar-section nav .navbar-brand {
+  font-family: 'Permanent Marker', cursive;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 15px;
+  font-size: 36px;
+  color: #fff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.navbar-section nav button {
+  border: none;
+}
+
+.navbar-section nav button:focus {
+  outline: none;
+}
+
+.navbar-section nav button .icon-bar {
+  width: 23px;
+  height: 4px;
+  background-color: #fff;
+  margin: 4px 0;
+  border-radius: 5px;
+}
+
+.navbar-section nav .navbar-collapse .navbar-nav .nav-link, .navbar-section nav .navbar-collapse .navbar-nav i {
+  color: #fff;
+  text-transform: capitalize;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.navbar-section nav .navbar-collapse .navbar-nav .nav-link:hover, .navbar-section nav .navbar-collapse .navbar-nav i:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-section nav .navbar-collapse .navbar-nav i {
+  font-size: 24px;
+}
+
+@media (max-width: 992px) {
+  .navbar-section nav .navbar-collapse .navbar-nav i:last-child {
+    margin: 20px 0 10px;
+  }
+}
+
+.navbar-section nav .navbar-collapse .navbar-nav.social-media a {
+  margin-left: 15px;
+}
+
+@media (max-width: 992px) {
+  .navbar-section nav .navbar-collapse .navbar-nav.social-media a:nth-child(1) {
+    margin-left: 0;
+  }
+}
+
+/* ------ About Bell Theme ------ */
+.abt .main-circle {
+  margin: 0 auto;
+  position: relative;
+  width: 160px;
+  height: 160px;
+  padding: 55px 25px 0 25px;
+  border: 6px solid #00ad85;
+  text-transform: capitalize;
+  border-radius: 50%;
+}
+
+.abt .main-circle span {
+  position: absolute;
+  top: -25px;
+  right: -15px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #E04F00;
+  border-radius: 50%;
+}
+
+.abt .top-margin {
+  margin-top: 65px;
+}
+
+/* ------ Fixed Background Section ------ */
+.fixed-bg {
+  width: 100%;
+  padding-top: 80px;
+  background-color: #000;
+  color: #fff;
+}
+
+.fixed-bg h2 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+/* ------ Features ------ */
+.features {
+  padding: 85px 0 45px;
+}
+
+@media (max-width: 992px) {
+  .features {
+    padding: 35px 0 5px;
+  }
+}
+
+.features .title {
+  color: #00ad85;
+}
+
+.features .my-card {
+  padding-bottom: 45px;
+}
+
+.features .my-card .icon-bg {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-color: #00ad85;
+  line-height: 70px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 50%;
+}
+
+.features .my-card h3 {
+  color: #00ad85;
+  text-transform: capitalize;
+}
+
+.features .my-card p {
+  font-size: 14px;
+  color: #999;
+}
+
+/* ------ Call to Action ------ */
+.cta {
+  background-color: #00ad85;
+  color: #fff;
+  padding: 25px 0;
+}
+
+@media (max-width: 992px) {
+  .cta {
+    padding: 35px 0;
+  }
+}
+
+.cta .text-area h2 {
+  text-transform: capitalize;
+}
+
+@media (max-width: 992px) {
+  .cta .text-area {
+    text-align: center !important;
+  }
+}
+
+.cta .btn-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cta .btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: capitalize;
+  border: 3px solid #fff;
+  padding: 15px 45px;
+  border-radius: 50px;
+}
+
+.cta .btn:hover {
+  color: #00ad85;
+}
+
+@media (max-width: 992px) {
+  .cta .btn {
+    position: relative;
+  }
+}
+
+/* ------ Portfolio ------ */
+.portfolio {
+  overflow: hidden;
+}
+
+.portfolio .text-area1 {
+  padding-bottom: 0;
+  margin-bottom: 65px;
+}
+
+.portfolio .text-area1 h2 {
+  color: #00ad85;
+  margin-bottom: 25px;
+}
+
+.portfolio .the-img {
+  position: relative;
+  padding: 0;
+}
+
+.portfolio .the-img a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.portfolio .the-img a .text-area {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+}
+
+.portfolio .the-img a .text-area h3 {
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 992px) {
+  .portfolio .the-img a .text-area h3 {
+    font-size: 18px;
+  }
+}
+
+.portfolio .the-img a .text-area p {
+  padding: 0 45px;
+  opacity: 0.75;
+}
+
+@media (max-width: 992px) {
+  .portfolio .the-img a .text-area p {
+    font-size: 13px;
+  }
+}
+
+.portfolio .the-img:hover a {
+  opacity: 1;
+}
+
+/* ------ Meet Out Team ------ */
+.mot .title {
+  color: #00ad85;
+}
+
+.mot .profile-card {
+  padding: 0;
+}
+
+.mot .profile-card .img-section {
+  position: relative;
+}
+
+.mot .profile-card .img-section .hover-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+}
+
+.mot .profile-card .img-section .hover-bg .hover-text {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.mot .profile-card .img-section .hover-bg .hover-text h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.mot .profile-card .img-section .hover-bg .hover-text .profile-icons {
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .mot .profile-card .img-section .hover-bg .hover-text .profile-icons {
+    margin-bottom: 15px;
+  }
+}
+
+.mot .profile-card .img-section .hover-bg .hover-text .profile-icons a {
+  margin: 0 5px;
+}
+
+.mot .profile-card .img-section .hover-bg .hover-text .profile-icons a i {
+  color: #fff;
+}
+
+.mot .profile-card .img-section .hover-bg .hover-text p {
+  font-size: 11px;
+  opacity: 0.75;
+  margin: 0;
+  padding: 0 35px;
+}
+
+.mot .profile-card:hover .hover-bg {
+  visibility: visible;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.mot .profile-card .text-area {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 25px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #333;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.mot .profile-card .text-area span {
+  display: block;
+}
+
+.mot .profile-card .text-area .profile-title {
+  font-size: 24px;
+}
+
+.mot .profile-card .text-area .profile-job {
+  font-size: 18px;
+  color: #999;
+}
+
+.mot .profile-card:hover .text-area {
+  background-color: #00ad85;
+  color: #fff;
+}
+
+.mot .profile-card:hover .profile-job {
+  color: #fff;
+}
+
+/* ------ Contact Us ------ */
+.contact .title {
+  color: #00ad85;
+}
+
+.contact .aep div {
+  position: relative;
+  padding: 0 0 10px 50px;
+  margin-bottom: 1rem;
+}
+
+.contact .aep div p {
+  margin: 0;
+}
+
+.contact .aep div i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  color: #00ad85;
+}
+
+.contact form input, .contact form textarea {
+  margin-bottom: 1rem;
+  border-radius: 0;
+}
+
+.contact form .form-control:focus {
+  outline: 0 !important;
+  border-color: #00ad85 !important;
+}
+
+.contact form button {
+  background-color: #00a37d;
+  border: none;
+  padding: 10px 24px;
+  color: #fff;
+  text-transform: capitalize;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.contact form button:hover {
+  background-color: #00c195;
+}
+
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 0;
+}
+
+@media (max-width: 992px) {
+  footer .row {
+    text-align: center;
+  }
+}
+
+footer .producer {
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin: 0;
+  line-height: 2.1;
+}
+
+footer .copy-right a {
+  color: #00ad85;
+}
+
+footer .copy-right a:hover {
+  text-decoration: none;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer ul li a {
+  color: #fff;
+  -webkit-transition: ease-in-out color 0.3s;
+  transition: ease-in-out color 0.3s;
+  margin-left: 15px;
+}
+
+footer ul li a:hover {
+  color: #00ad85;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+@media (max-width: 992px) {
+  footer ul {
+    margin-top: 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
