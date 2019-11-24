@@ -3,6 +3,7 @@
 
 $primary-color: #00ad85;
 $secondary-color: #E04F00;
+$background-img: url('./images/bg-image.jpg');
 
 @mixin md-size {
     @media(max-width: 992px){
@@ -58,7 +59,7 @@ header{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('../images/bg-image.jpg');
+    background-image: $background-img;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
